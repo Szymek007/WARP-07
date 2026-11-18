@@ -3,6 +3,10 @@ name: Build .NET project
 on:
   workflow_dispatch:
 
+
+env:
+  PROJECT_PATH: "WARP-07.DEMO"
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -23,13 +27,12 @@ jobs:
 
       - name: Restore dependencies
         shell: bash
-        run: dotnet restore "WARP-07.DEMO"
+        run: dotnet restore "$PROJECT_PATH"
 
       - name: Build project
         shell: bash
-        run: dotnet build "WARP-07.DEMO" --configuration Release --no-restore
+        run: dotnet build "$PROJECT_PATH" --configuration Release --no-restore
 
       - name: Run project
         shell: bash
-        run: dotnet run --project "WARP-07.DEMO" --configuration Release --no-build
-        
+        run: dotnet run --project "PROJECT_PATH" --configuration Release --no-build
