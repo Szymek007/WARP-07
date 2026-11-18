@@ -25,6 +25,6 @@ jobs:
         shell: bash
         run: dotnet restore "WARP-07.DEMO"
 
-              - name: Build project
+      - name: Build project
         shell: bash
         run: dotnet build "WARP-07.DEMO" --configuration Release --no-restore
