@@ -28,3 +28,8 @@ jobs:
       - name: Build project
         shell: bash
         run: dotnet build "WARP-07.DEMO" --configuration Release --no-restore
+
+      - name: Run project
+        shell: bash
+        run: dotnet run --project "WARP-07.DEMO" --configuration Release --no-build
+        
