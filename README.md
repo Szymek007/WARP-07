@@ -1,4 +1,4 @@
-[![Build](https://github.com/Szymek007/WARP-07.DEMO/actions/workflows/build.yml/badge.svg)](https://github.com/OWNER/REPOSITORY/actions/workflows/build.yml)
+[![Build](https://github.com/Szymek007/WARP-07.DEMO/actions/workflows/build.yml/badge.svg)](https://github.com/Szymek007/WARP-07.DEMO/actions/workflows/build.yml)
 
 Continuous Integration
 
