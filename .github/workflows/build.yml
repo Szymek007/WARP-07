@@ -26,6 +26,13 @@ jobs:
       - name: Show directory
         run: pwd
 
+      - name: Show repository structure
+        shell: bash
+        run: |
+          pwd
+          ls -la
+          find . -maxdepth 3 \( -name "*.csproj" -o -name "*.sln" -o -name "*.slnx" \)
+
       - name: Setup .NET
         uses: actions/setup-dotnet@v4
         with:
