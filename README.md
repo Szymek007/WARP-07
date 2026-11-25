@@ -1,3 +1,5 @@
+[![Build](https://github.com/Szymek007/WARP-07.DEMO/actions/workflows/build.yml/badge.svg)](https://github.com/OWNER/REPOSITORY/actions/workflows/build.yml)
+
 Continuous Integration
 
 Projekt korzysta z GitHub Actions do automatycznego sprawdzania poprawnosci dzialania.
