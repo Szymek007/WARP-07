@@ -11,7 +11,7 @@ on:
 
 
 env:
-  PROJECT_PATH: "WARP-07.DEMO"
+  PROJECT_PATH: "WARP-07.DEMO/WARP-07.DEMO.csproj"
 
 jobs:
   build:
@@ -26,30 +26,6 @@ jobs:
       - name: Show directory
         run: pwd
       
-      
-      - name: Debug repository
-        shell: bash
-        run: |
-          echo "Current directory:"
-          pwd
-
-          echo "Repository files:"
-          ls -la
-
-          echo "All project files:"
-          find . -type f \( -name "*.csproj" -o -name "*.sln" -o -name "*.slnx" \)
-
-          echo "Project directory:"
-          find . -type d -iname "*WARP*"
-
-
-      - name: Show repository structure
-        shell: bash
-        run: |
-          pwd
-          ls -la
-          find . -maxdepth 3 \( -name "*.csproj" -o -name "*.sln" -o -name "*.slnx" \)
-
       - name: Setup .NET
         uses: actions/setup-dotnet@v4
         with:
